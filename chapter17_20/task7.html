@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 17 to 20</title>
+</head>
+<body>
+    <h1>ARRAYS AND LOOP Task 7</h1>
+
+    <script>
+        var a = ['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+        var ser=prompt('Welcome to the bakery What you want to order');
+        var check;
+        var pos;
+
+        for(var i=0;i<a.length;i++){
+            if(a[i]==ser){
+                check="yes";
+                pos=i
+                break;
+            }
+            else{
+                check="no";
+            }
+        }
+        if(check=="yes"){alert(ser+ ' is avaliable at index '+  pos)}
+        else{alert("We are sorry " + ser + " is not available in our bakery")};
+    </script>
+    
+</body>
+</html>

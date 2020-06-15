@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chapter 14-16 Task 9</h1>
+
+
+    <script>
+
+        document.write('<h3>Original Color Array </h3>');
+
+        var color=['white','blue','green'];
+        document.write('<h4>Array: '  +color+ '</h4>');
+        //part a
+        var new_color=prompt("What color you wants to add to the beginning");
+        color.unshift(new_color);
+        document.write('<h3>a)Add new Color at the beginning </h3>');
+        document.write('<h4> Array: ' +color+ '</h4>');
+        //part b
+        document.write('<h3>b)Add new Color at the End </h3>');
+        var new_color2=prompt("What color you wants to add to the End ");
+        color.push(new_color2);
+        document.write('<h4> Array: ' +color+ '</h4>');
+        //part c
+        document.write('<h3>c)Add new Color at the beginning </h3>');
+        var new_color=prompt("Add new Color at the beginning");
+        color.unshift(new_color);
+        document.write('<h4> Array: ' +color+ '</h4>');
+
+        //part d
+        document.write('<h3>d)Remove the first Element </h3>');
+        color.shift();
+        document.write('<h4> Array: ' +color+ '</h4>');
+
+        //part e
+        document.write('<h3>e)REmove the last element</h3>');
+        color.pop();
+        document.write('<h4> Array: ' +color+ '</h4>');
+
+        //part f
+        document.write('<h3>e)Enter the color at user  given position</h3>');
+        var pos=parseInt(prompt('Enter the position od new color'));
+        var new_color=prompt(`Enter the new color at the position  ${pos}`)
+        color.splice(pos,0,new_color);
+        document.write('<h4> Array: ' +color+ '</h4>');
+
+        //part g
+        document.write('<h3>e)Delte the color at user  given position</h3>');
+        var pos=parseInt(prompt('Enter the position to delte the color'));
+        delete color[pos];
+        document.write('<h4> Array: ' +color+ '</h4>');
+
+
+
+
+    </script>
+</body>
+</html>

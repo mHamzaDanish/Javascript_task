@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Input and Conditional Statement Task 11</h1>
+
+
+
+    <script>
+
+    
+    var num1=parseInt(prompt("Enter the first Number"));
+    var num2=parseInt(prompt("Enter the Second number"));
+    var operation=prompt("Enter the operation (+ * - /)");
+    var result;
+    if(operation==="+"){
+        result=num1+num2;
+    }
+    else if(operation==="-")  {
+        result=num1-num2;
+    }
+    else if(operation==="*")  {
+        result=num1*num2;
+    }
+    else if(operation==="/")  {
+        result=num1/num2;
+    }
+    else{
+        document.write(`<h2>Enter proper value</h2>`);
+        result=num1+num2;
+    }
+
+    document.write(`<h2>${num1} ${operation} ${num2} = ${result} </h2>`)
+
+    </script>
+</body>
+</html>

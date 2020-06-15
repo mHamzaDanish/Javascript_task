@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Input and Conditional Statement Task 6</h1>
+
+    <script>
+
+    var total_marks_obtained=parseInt(prompt("Enter the total Marks obtained in all subject"));
+    var total_marks=parseInt(prompt("Enter the total Marks of all subject"));
+    var per=(total_marks_obtained*100)/total_marks;
+    var grade;
+    var remarks;
+    if(per>=80){
+         grade="A-one";
+         remarks="Excellent";
+    }
+    else if(per>=70){
+        grade="A";
+        remarks="Good"; 
+    }
+    
+    
+    else if(per>=60){
+        grade="B";
+        remarks="You need to improve"; 
+    }
+    else if(per<60){
+        grade="Fail";
+        remarks="Sorry"; 
+    }
+
+    else{
+        grade='nan';
+        remarks='nan'
+
+    }
+
+    document.write(`<h1>Mark Sheet</h1>`);
+    document.write(`Total Marks ${total_marks} <br>`);
+    document.write(`Total Marks Obtained ${total_marks_obtained} <br>`);
+    document.write(`Percentage ${per}% <br>`);
+    document.write(`Grade ${grade} <br>`);
+    document.write(`Remarks ${remarks}<br>`);
+
+
+    </script>
+</body>
+</html>

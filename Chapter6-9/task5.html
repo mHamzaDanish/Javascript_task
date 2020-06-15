@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 to 9 </title>
+</head>
+<body>
+    <h1>Math Expressions Task 5</h1>
+
+<script>
+    var sub1=prompt("Enter the 1st Subject Name ");
+    var sub1_marks=prompt(`Enter the ${sub1} marks`);
+    var sub2=prompt("Enter the 2nd Subject Name ");
+    var sub2_marks=prompt(`Enter the ${sub2} marks`);
+    var sub3=prompt("Enter the 3rd Subject Name ");
+    var sub3_marks=prompt(`Enter the ${sub3} marks`);
+    var total=100;
+    var per1=(sub1_marks*100)/100;
+    var per2=(sub2_marks*100)/100;
+    var per3=(sub3_marks*100)/100;
+    var total_marks=parseInt(sub3_marks)+parseInt( sub1_marks)+parseInt( sub2_marks);
+    var total_per=per1+per2+per3;
+    document.write('<table>');
+    document.write(`<tr><th> Subject </th><th> Total </th><th> Marks Obtained </th> <th> Percentage </th></tr><br>`);
+    document.write(`<tr><td> ${sub1}</td><td> ${total}</td><td> ${sub1_marks}</td> <td>${per1}%</td></tr><br>`);
+    document.write(`<tr><td> ${sub2}</td><td> ${total}</td><td> ${sub2_marks}</td> <td>${per2}%</td></tr><br>`);
+    document.write(`<tr><td> ${sub3}</td><td> ${total}</td><td> ${sub3_marks}</td> <td>${per3}%</td></tr><br>`);
+    document.write(`<tr><td>Total </td><td> ${total*3}</td><td> ${total_marks}</td> <td>${total_per}%</td></tr><br>`);
+    document.write('</table>');
+    
+</script>
+    
+</body>
+</html>

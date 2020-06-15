@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9 to 11</title>
+</head>
+<body>
+    <h1>User Input and Conditional Statement Task 3</h1>
+
+    <script>
+
+        var Traffic_signal_color=prompt("Enter the Traffic signal color");
+        if (Traffic_signal_color.toLowerCase()==="red"){
+            document.write(`<h3>Red:Must Stop</h3>`);
+        }
+        else if(Traffic_signal_color.toLowerCase()==="green"){
+            document.write(`<h3>Green:Move now</h3>`);
+
+        }
+        else if(Traffic_signal_color.toLowerCase()==="yellow"){
+            document.write(`<h3>Yellow : Ready to Move</h3>`);
+        }
+        else{
+            document.write(`<h3>Please enter the right color</h3>`);
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Chapter 14 to 16 Task 10 to 15 </h2>
+
+
+    <script>
+        //task 10
+        document.write(`<h3>Task 10</h3>`);
+
+        var student_number=[320,200,480,120,220];
+        document.write(`<h4>Score of Students: ${student_number} </h4>`);
+        document.write(`<h4>Score of Students: ${student_number.sort()} </h4>`);
+
+        //task 11
+        document.write(`<h3>Task 11</h3>`);
+
+        var cites=['Karachi','Lahore','Islamabad','Quetta','Peshawar'];
+        var new_cites=cites.slice(2,4)
+        document.write(`<h4>City list <br>  ${cites}</h4>`);
+        document.write(`<h4>Selected City list <br> ${new_cites}</h4>`);
+
+        //task 12
+        document.write(`<h3>Task 12</h3>`);
+        var arr = ['This',  'is' ,  'my' ,  'cat'];
+        document.write(`<h4>Array: <br>${arr}</h4>`);
+        document.write(`<h4>String: <br>${arr.join(' ')}</h4>`);
+
+        //task 13
+        document.write(`<h3>Task 13</h3>`);
+        var fifo = [];
+        fifo[0]='Keyboard';
+        fifo[1]='mouse';
+        fifo[2]='printer';
+        fifo[3]='monitor';
+        
+        document.write(`<h4>Device: <br>${fifo}</h4>`);
+        document.write(`<h4>Out:<br>${fifo[0]}</h4>`);
+        document.write(`<h4>Out:<br>${fifo[1]}</h4>`);
+        document.write(`<h4>Out:<br>${fifo[2]}</h4>`);
+        document.write(`<h4>Out:<br>${fifo[3]}</h4>`);
+ 
+        //task 14
+        document.write(`<h3>Task 14</h3>`);
+        var fifo = [];
+        fifo.push('Keyboard');
+        fifo.push('mouse');
+        fifo.push('printer');
+        fifo.push('monitor');
+        document.write(`<h4>Device: <br>${fifo}</h4>`);
+        document.write(`<h4>Out:<br>${fifo.pop()}</h4>`);
+        document.write(`<h4>Out:<br>${fifo.pop()}</h4>`);
+        document.write(`<h4>Out:<br>${fifo.pop()}</h4>`);
+        document.write(`<h4>Out:<br>${fifo.pop()}</h4>`);
+
+        //task 15 without using for loop
+        document.write(`<h3>Task 15</h3>`);
+
+        var  phone_manufacturers =['Apple','Samsung', 'Motorola', 'Nokia', 'Sony' , 'Haier'];
+        document.write('<select id="phone" ></select>');
+        var select = document.getElementById("phone");
+        var option = document.createElement('option');
+        option.innerHTML = phone_manufacturers[0];
+        option.value = phone_manufacturers[0];
+        select.appendChild(option);
+        var option = document.createElement('option');
+        option.innerHTML = phone_manufacturers[1];
+        option.value = phone_manufacturers[1];
+        select.appendChild(option);
+        var option = document.createElement('option');
+        option.innerHTML = phone_manufacturers[2];
+        option.value = phone_manufacturers[2];
+        select.appendChild(option);
+        var option = document.createElement('option');
+        option.innerHTML = phone_manufacturers[3];
+        option.value = phone_manufacturers[3];
+        select.appendChild(option);
+
+        //task 15 with foreach loop
+
+        document.write(`<h3>Task 15</h3>`);
+
+        var  phone_manufacturers =['Apple','Samsung', 'Motorola', 'Nokia', 'Sony' , 'Haier'];
+        document.write('<select id="phone2" ></select>');
+        
+        for (var i=0;i<=phone_manufacturers.length-1;i++){
+        var select = document.getElementById("phone2");
+        var option = document.createElement('option');
+        option.innerHTML = phone_manufacturers[i];
+        option.value = phone_manufacturers[i];
+        select.appendChild(option);
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 17 to 20</title>
+</head>
+<body>
+    <h1>ARRAYS AND LOOP Task 1 to 6 </h1>
+
+    <script>
+        //task 1
+        document.write("<h2>Task 1 </h2>");
+        var array_2d =[[],[]];
+        document.write('<h4>var array_2d =[[],[]];</h4>');
+        
+        //task2
+        document.write("<h2>Task 2 </h2>");
+        var array_2ds=[[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+
+        for (var i=0 ;i<array_2ds.length;i++){
+            document.write(array_2ds[i].join(' ') + "<br>");
+        }
+
+
+        //task3
+        document.write("<h2>Task 3 </h2>");
+        for(var i=1;i<=10;i++){
+            document.write(i + '<br>');
+        }
+
+        //task4
+        document.write("<h2>Task 4 </h2>");
+        var table_no= parseInt(prompt("Enter a number to show its table"));
+        var table_length=parseInt(prompt("Enter length Multipication Table"));
+        for (var i=1;i<=table_length;i++){
+            document.write(`${table_no} x ${i} = ${table_no*i} <br>`);
+        }
+
+        //task 5
+        document.write("<h2>Task 5 </h2>");
+        var fruits = ['apple', 'banana', 'mango', 'orange','strawberry'];
+        for (var i=0;i<fruits.length;i++){
+            document.write(fruits[i] + '<br>');
+        }
+        document.write('<br>');
+        for (var i=0;i<fruits.length;i++){
+            document.write('Element at index '+ i + "is " + fruits[i] + '<br>');
+        }
+
+
+        //task 6
+        document.write("<h2>Task 6 </h2>");
+        
+        var counting=[]
+        for(var i =0 ; i<=15;i++){
+            counting.push(i);
+        }
+        document.write('a)Counting: <br> ' + counting+ '<br>');
+
+        var revere=[]
+        for(var i =0 ; i<=10;i++){
+            revere.unshift(i);
+        }
+        document.write('<br>b)Reverse counting: <br>' + revere+ '<br>');
+
+        var Even=[]
+        for(var i =0 ; i<=20;i++){
+            if(i%2==0){
+            Even.push(i);
+            }
+        }
+        document.write('<br>c)Even: <br>' + Even+ '<br>');
+        var odd=[]
+        for(var i =0 ; i<=20;i++){
+            if(i%3==0){
+            odd.push(i);
+            }
+        }
+        document.write('<br>d)Even: <br>' + odd + '<br>');
+
+        var EvenSeries=[]
+        for(var i =1 ; i<=20;i++){
+            if(i%2==0){
+                EvenSeries.push(i+'k');
+            }
+        }
+        document.write('<br>d)Even: <br>' + EvenSeries+ '<br>');
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
